@@ -1,10 +1,11 @@
-# 📚 Study Tracker (Java Swing Application)
+📚 Study Tracker (Java Swing Application)
 
-A Java Swing-based application to help students track their study progress, manage tasks, and maintain productivity.
-
-A desktop-based Study Tracker application developed using Java Swing that enables users to record, manage, and analyze their daily study activities. The application provides an interactive graphical interface to log study sessions, maintain structured records, and generate useful insights based on time spent. 
-
-This project demonstrates the practical application of object-oriented programming, event-driven design, and data handling in a real-world scenario. It focuses on building a simple yet effective productivity tool that helps users monitor their study patterns and improve consistency over time.
+  - A Java Swing-based desktop application designed to help students track study progress, manage tasks, and maintain productivity.
+  - Enables users to record, organize, and analyze daily study activities through an interactive graphical interface.
+  - Allows structured logging of study sessions with subject, duration, and description for effective tracking and review.
+  - Provides summarized insights by analyzing study time across different subjects and dates.
+  - Demonstrates practical implementation of object-oriented programming, event-driven design, and data handling concepts.
+  - Built as a simple and efficient productivity tool to improve consistency and monitor study patterns over time.
 
 ## Overview
 The system allows users to input study details such as subject, duration, and description, which are automatically tagged with the current date. All records are displayed in a tabular format, making it easy to track and review study activities. Additionally, the application processes stored data to generate summaries that help users understand their study distribution across different subjects and dates.
