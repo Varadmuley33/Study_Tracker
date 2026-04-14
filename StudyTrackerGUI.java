@@ -1,48 +1,10 @@
-import javax.swing.*;
-import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.io.FileWriter;
 import java.time.LocalDate;
 import java.util.*;
+import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 
-// Class to hold the Study Log details
-class StudyLog
-{
-    public LocalDate Date;
-    public String Subject;
-    public double Duration;
-    public String Description;
-
-    public StudyLog(LocalDate date, String subject, double duration, String description)
-    {
-        this.Date = date;
-        this.Subject = subject;
-        this.Duration = duration;
-        this.Description = description;
-    }
-
-    public LocalDate getDate()
-    {
-        return Date;
-    }
-
-    public String getSubject()
-    {
-        return Subject;
-    }
-
-    public double getDuration()
-    {
-        return Duration;
-    }
-
-    public String getDescription()
-    {
-        return Description;
-    }
-}
-
-// GUI class for Study Tracker
 class StudyTrackerGUI extends JFrame
 {
     private ArrayList<StudyLog> Database = new ArrayList<>();
@@ -50,7 +12,7 @@ class StudyTrackerGUI extends JFrame
 
     public StudyTrackerGUI()
     {
-        setTitle("Marvellous Study Tracker");
+        setTitle("Study Tracker");
         setSize(750, 500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
@@ -185,7 +147,7 @@ class StudyTrackerGUI extends JFrame
                 return;
             }
 
-            try(FileWriter fw = new FileWriter("MarvellousStudy.csv"))
+            try(FileWriter fw = new FileWriter("Study.csv"))
             {
                 fw.write("Date,Subject,Duration,Description\n");
 
@@ -195,7 +157,7 @@ class StudyTrackerGUI extends JFrame
                              log.getDuration() + "," + log.getDescription().replace(",", " ") + "\n");
                 }
 
-                JOptionPane.showMessageDialog(this, "Exported to MarvellousStudy.csv successfully!");
+                JOptionPane.showMessageDialog(this, "Exported to Study.csv successfully!");
             }
             catch(Exception ex)
             {
@@ -205,17 +167,5 @@ class StudyTrackerGUI extends JFrame
 
         // Exit application
         BtnExit.addActionListener(e -> System.exit(0));
-    }
-}
-
-// Starter class
-class Program557GUI
-{
-    public static void main(String[] args)
-    {
-        SwingUtilities.invokeLater(() ->
-        {
-            new StudyTrackerGUI().setVisible(true);
-        });
     }
 }
