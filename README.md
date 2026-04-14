@@ -25,7 +25,7 @@ The system allows users to input study details such as subject, duration, and de
 - **File Handling** for data persistence
 
 ## Project Structure
-.
+
 ├── StudyLog.java              Handles data representation of each study entry  
 ├── StudyTrackerGUI.java      Implements GUI and core functionality  
 ├── StudyTrackerGUImain.java  Application entry point  
