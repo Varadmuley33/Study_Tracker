@@ -3,7 +3,7 @@ import java.io.FileWriter;
 import java.time.LocalDate;
 import java.util.*;
 import javax.swing.*;
-import javax.swing.table.DefaultTableModel;
+import javax.swing.table.DefaultTableModel;  
 
 class StudyTrackerGUI extends JFrame
 {
