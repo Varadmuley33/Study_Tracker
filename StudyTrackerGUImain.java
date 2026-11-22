@@ -6,7 +6,7 @@ public class StudyTrackerGUImain
     {
         SwingUtilities.invokeLater(() ->
         {
-            new StudyTrackerGUI().setVisible(true);
+            new StudyTrackerGUI().setVisible(true);   
         });
     }
 }
